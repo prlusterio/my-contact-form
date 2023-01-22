@@ -6,10 +6,10 @@ export interface InputProps {
     name?: string;
 }
 
-export const Input = ({ className, id, name  }: InputProps) => {
+export const Input = ({ className, id, name }: InputProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <input id={id} name={name} />
+            <input id={id} name={name} className={styles.input} />
         </div>
     );
 };
